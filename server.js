@@ -5,10 +5,10 @@ var http = require('http');
 var server = http.createServer(function(req, res ){
   //header
   
-  Response.writeHead(200, {'content-type':'text/plain'});
+  res.writeHead(200, {'content-type':'text/plain'});
   //send back some information
 
-  Response.end('welcome to zuri training!!');
+  res.end('welcome to zuri training!!');
 });
 //creating a server
 
